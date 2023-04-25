@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Skills - Miguel Osorio</title>
+    <style>
+    body{
+        background-color: #E7DEDE;
+        display: block;
+        height: 100vh;
+        width: 100vw;
+    }
+    .header{
+        height: 30vh;
+        background-color: #E7DEDE;
+    }
+    .header #name{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #1D254F;
+        font-size: 10vh;
+        margin-top: 0vh;
+        margin-bottom: 0vh;
+        padding-bottom: 0vh;
+        margin-left: 2vw;
+    }
+    .header #profesion{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #1D254F;
+        font-size: 5vh;
+        margin-top: 0vh;
+        padding-top: 0vh;
+        margin-left: 2vw;
+    }
+    .header img{
+        position: absolute;
+        top: 5vh;
+        bottom: 0;
+        left: 84vw;
+        height: 10vh;
+        width: 7.5vw;
+    }
+    .nav-bar{
+        background-color: black;
+        height: 8vh;
+        width: 80vw;
+        margin-left: 20vw;
+        margin-right: 5vw;
+        margin-bottom: 20vh;
+        padding-bottom: 20vh;
+        border-radius: 25px;
+    }
+    ul {
+        list-style-type: none;
+    }
+    li {
+        float: left;		
+    }
+    li a {
+        display: block;
+        color: white;
+        font-size: 4vh;
+        padding: 2.5vh 4vw;
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    li a:hover {
+        background-color: #1D3237;
+        border-radius: 25px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        width: 100vw;
+        background-color: white; 
+    }
+    .main #skills{
+        margin-top: 5vh;
+        margin-left: 45vw;
+        width: 10vw;
+        height: 5vh;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 3vh;
+        color: white;
+        text-align: center;
+        background-color: #25788F;
+        border-radius: 25px;
+    }
+    .main .images{
+        display: flex;
+        justify-content: center;
+        align-content: center; 
+        height: 20vh;
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+    #bootstrap img{
+        height: auto;
+        width: 100%;
+    }
+    #css img{
+        height: auto;
+        width: 100%;
+    }
+    #html img{
+        height: auto;
+        width: 100%;
+    }
+    #bash img{
+        height: auto;
+        width: 100%;
+    }
+    #python img{
+        height: auto;
+        width: 100%;
+    }
+    #java img{
+        height: auto;
+        width: 100%;
+    }
+    .main #text{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 3vh;
+        width: 30vw;
+        text-align: justify;
+        margin: 0 auto;
+    }
+    .main #github{
+        margin: 0 auto;
+    }
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+        width: 100%;
+        background-color: #E7DEDE;
+    }
+    .footer h2{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #1D254F;
+        font-size: 5vh;
+    }
+    @media only screen and (max-width: 800px) {
+            .footer h2{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #1D254F;
+            font-size: 5vh;
+            text-align: center;
+        }
+            .main #skills{
+            margin-top: 5vh;
+            margin-left: 40vw;
+            width: 20vw;
+            height: 4vh;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 3vh;
+            color: white;
+            text-align: center;
+            background-color: #25788F;
+            border-radius: 25px;
+        }
+    }
+    @media print {
+        .header, .footer {
+            display: none;
+        }
+    }   
+    
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 id="name">Miguel Osorio</h1>
+        <h2 id="profesion">System engineer in progress</h2>
+        <a href="index.html"><img src="assets/images/home.png" alt="Home_logo" id="home"></a>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <div id="skills">Skills</div>
+        <div class="images">
+            <div id="bootstrap"><img src="assets/images/bootstrap.png" alt="Home_logo"></div>
+            <div id="css"><img src="assets/images/css.png" alt="Home_logo"></div>
+            <div id="html"><img src="assets/images/html.png" alt="Home_logo"></div>
+            <div id="bash"><img src="assets/images/bash.png" alt="Home_logo"></div>
+            <div id="python"><img src="assets/images/python.png" alt="Home_logo"></div>
+            <div id="java"><img src="assets/images/java.png" alt="Home_logo"></div>
+        </div>
+        <div id="text">Please visit my repository on GitHub to see my projects! c:</div>
+        <div id="github"><a href="https://github.com/Daijaz/Personal-developments"><img src="assets/images/github.png" alt="Home_logo"></a></div>
+    </div>
+    <div class="footer">
+        <h2>If you can imagine it, I can programming it</h2>
+    </div>
+</body>
+</html>

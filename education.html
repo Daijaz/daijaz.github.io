@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Education - Miguel Osorio</title>
+    <style>
+    body{
+        background-color: #E7DEDE;
+        display: block;
+        height: 100vh;
+        width: 100vw;
+    }
+    .header{
+        height: 30vh;
+        background-color: #E7DEDE;
+    }
+    .header #name{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #1D254F;
+        font-size: 10vh;
+        margin-top: 0vh;
+        margin-bottom: 0vh;
+        padding-bottom: 0vh;
+        margin-left: 2vw;
+    }
+    .header #profesion{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #1D254F;
+        font-size: 5vh;
+        margin-top: 0vh;
+        padding-top: 0vh;
+        margin-left: 2vw;
+    }
+    .header img{
+        position: absolute;
+        top: 5vh;
+        bottom: 0;
+        left: 84vw;
+        height: 10vh;
+        width: 7.5vw;
+    }
+    .nav-bar{
+        background-color: black;
+        height: 8vh;
+        width: 80vw;
+        margin-left: 20vw;
+        margin-right: 5vw;
+        margin-bottom: 20vh;
+        padding-bottom: 20vh;
+        border-radius: 25px;
+    }
+    ul {
+        list-style-type: none;
+    }
+    li {
+        float: left;		
+    }
+    li a {
+        display: block;
+        color: white;
+        font-size: 4vh;
+        padding: 2.5vh 4vw;
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    li a:hover {
+        background-color: #1D3237;
+        border-radius: 25px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        width: 100vw;
+        background-color: white;  
+    }
+    .main #education{
+        margin-top: 5vh;
+        margin-left: 45vw;
+        margin-bottom: 10vh;
+        width: 10vw;
+        height: 5vh;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 3vh;
+        color: white;
+        text-align: center;
+        background-color: #25788F;
+        border-radius: 25px;
+    }
+
+    .main #text{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 3vh;
+        text-align: justify;
+        width: 20vw;
+        margin: 0 auto;
+    }
+
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+        width: 100%;
+        background-color: #E7DEDE;
+    }
+
+    .footer h2{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #1D254F;
+        font-size: 5vh;
+    }
+    @media only screen and (max-width: 800px) {
+            .footer h2{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #1D254F;
+            font-size: 5vh;
+            text-align: center;
+        }
+
+            .main #education{
+            margin-top: 5vh;
+            margin-left: 40vw;
+            width: 20vw;
+            height: 4vh;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 3vh;
+            color: white;
+            text-align: center;
+            background-color: #25788F;
+            border-radius: 25px;
+        }
+    }
+    @media print {
+        .header, .footer {
+            display: none;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1 id="name">Miguel Osorio</h1>
+        <h2 id="profesion">System engineer in progress</h2>
+        <a href="index.html"><img src="assets/images/home.png" alt="Home_logo" id="home"></a>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <div id="education">Education</div>
+        <div id="text">System engineer in progress at Universidad Libre Of Colombia and courses in CodeAcademy, Platzi, Amazon and Cisco with certificates.</div>
+    </div>
+    <div class="footer">
+        <h2>If you can imagine it, I can programming it</h2>
+    </div>
+</body>
+</html>
