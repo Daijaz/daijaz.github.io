@@ -1,0 +1,468 @@
+body {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background: -webkit-linear-gradient(-1deg, #0D0D0D, #141E30);
+}
+
+.header-container {
+    display: flex;
+    position: fixed;
+    height: 10vh;
+    width: 100vw;
+    z-index: 8;
+    justify-content: center;
+    background-color: #141E30;
+    color: #eae9e9;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+}
+
+.items {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #268EA6;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.items:hover{
+    color: #29CDF2;
+}
+
+img[src="assets/images/espana.png"]:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+img[src="assets/images/estados-unidos-de-america.png"]:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+img[src="assets/images/sol.png"]:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+img[src="assets/images/medialuna.png"]:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#burger {
+    display: none;
+    width: 2em;
+    cursor: pointer;
+}
+
+.aside-navbar {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+    background-color: #141E30;
+}
+
+#close-aside{
+    width: 2em;
+}
+
+#close-aside:hover{
+    scale: 1.2; 
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 80vh; 
+}
+
+.introduction-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    width: 50vw;
+    margin-top: 15vh;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#name {
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    color: #D9D3C1;
+    font-size: 8em;
+    line-height: 1em;
+    margin: 0px;
+}
+
+#profesion {
+    font-family: "Roboto", sans-serif;
+    color: #29CDF2;
+    font-size: 3em;
+    margin: 0;
+}
+
+#introduction {
+    font-family: "Roboto", sans-serif;
+    color: #8a8a8a;
+    font-size: 2em;
+}
+
+.figure-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+#personal-photo {
+    border-radius: 60%;
+    border: solid 0.5rem #29CDF2;
+    max-width: 15rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+}
+
+img[src="assets/images/curriculum-vitae.png"]{
+    width: 7rem;
+}
+
+img[src="assets/images/curriculum-vitae.png"]:hover{
+    scale: 1.2;
+}
+
+#about-me-container {
+    padding-top: 10vh;
+    width: 50vw;
+}
+
+.title {
+    font-family: "Roboto", sans-serif;
+    color: #268EA6;
+    font-size: 3em;
+    margin: 0;
+}
+
+.line-in-title {
+    background-color: #29CDF2;
+    width: 100%;
+    height: 0.3rem;
+}
+
+#about-me-paragraph {
+    font-family: "Roboto", sans-serif;
+    color: #D9D3C1;
+    font-size: 2em;
+    margin-top: 5vh;
+}
+
+#skills-title {
+    font-family: "Roboto", sans-serif;
+    color: #268EA6;
+    font-size: 3em;
+    width: 20rem;
+    margin-top: 5vh;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10;
+}
+
+.skills-icons {
+    height: 5rem;
+    width: 5rem;
+}
+
+#projects-container {
+    width: 50vw;
+    padding-top: 10vh;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    padding-top: 5vh;
+}
+
+.project-images { 
+    max-width: 50%;
+    max-height: 100%;
+    border-radius: 4%;
+}
+
+.descriptions-projects{
+    font-family: "Roboto", sans-serif;
+    color: #D9D3C1;
+    font-size: 1.2em;
+    width: 20vw;
+    margin: 0;
+}
+
+#contact-container {
+    margin-top: 10vh;
+    width: 50vw;
+}
+
+.contact-icons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10;
+}
+
+.contact-icons {
+    height: 5rem;
+    width: 5rem;
+}
+
+.contact-icons:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+@media screen and ( max-width: 1024px ) {
+
+    .navbar-container {
+        width: 80vw;
+    }
+
+    .article-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .introduction-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #about-me-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .icons-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    #projects-container {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .project-images { 
+        max-width: 25vw;
+        max-height: 20vh;
+        border-radius: 4%;
+    }
+    
+    .descriptions-projects{
+        font-family: "Roboto", sans-serif;
+        color: #D9D3C1;
+        font-size: 1em;
+        width: 20vw;
+        margin: 0;
+    }
+
+    #name {
+        font-size: 4em;
+    }
+}
+
+@media screen and ( max-width: 430px ) {
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    #about {
+        display: none;
+    }
+
+    #projects {
+        display: none;
+    }
+
+    #contact {
+        display: none;
+    }
+
+    #burger {
+        display: initial;
+        cursor: pointer;
+    }
+
+    .aside-navbar {
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 20vh;
+        background-color: #141E30;
+    }
+    
+    .introduction-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        padding-top: 5vh;
+    }
+    
+    .article-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #introduction {
+        font-size: 1.5em;
+    }
+
+    #personal-photo {
+        width: 30vw;
+        border: 5px solid #29CDF2;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    img[src="assets/images/curriculum-vitae.png"]{
+        width: 15vw
+    }
+    
+    img[src="assets/images/curriculum-vitae.png"]:hover {
+        scale: 2;
+    }
+
+    #about-me-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 20vh;
+    }
+
+    #about-me-paragraph {
+        font-size: 1.5em;
+        margin-top: 2rem;
+        width: 80%;
+    }
+
+    .icons-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    #projects-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+        padding-bottom: 30vh;
+
+    }
+
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .project-images { 
+        max-width: 50%;
+        max-height: 100%;
+        border-radius: 4%;
+    }
+
+    .descriptions-projects {
+        font-size: 0.9em;
+        width: 70vw;
+    }
+
+    #contact-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .contact-icons-container > img {
+      width: 3em;
+      height: 3em;
+    }
+
+    .contact-icons-container {
+      width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

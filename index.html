@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portafolio Daijaz</title>
+</head>
+<body>
+    <header class="header-container">
+        <nav class="navbar-container">
+            <a href="#about-me-container" id="about" class="items">About me</a>
+            <a href="#projects-container" id="projects"class="items">Projects</a>
+            <a href="#contact-container" id="contact"class="items">Contact</a>
+            <img src="assets/images/burguer.png" alt="" id="burger">
+            <img src="assets/images/espana.png" id="spain-button" alt="" height="30rem" width="30rem">
+            <img src="assets/images/estados-unidos-de-america.png" id="usa-button" alt="" height="30rem" width="30rem" hidden>
+            <img src="assets/images/sol.png" id="sun-button" alt="" height="30rem" width="30rem">
+            <img src="assets/images/medialuna.png" id="moon-button" alt="" height="30rem" width="30rem" hidden>
+        </nav>
+    </header>
+    <aside class="aside-navbar">
+        <a href="#about-me-container" id="aboutAside" class="items">About me</a>
+        <a href="#projects-container" id="projectsAside" class="items">Projects</a>
+        <a href="#contact-container" id="contactAside" class="items">Contact</a>
+        <img id="close-aside" src="assets/images/borrar.png" alt="">    
+    </aside>
+    <main class="main-container">
+       <section class="introduction-container">
+            <article class="article-container">
+                <h1 id="name">Miguel Osorio</h1>
+                <h2 id="profesion">Software Developer</h2>
+                <p id="introduction">Crafting elegant code that seamlessly merges logic and creativity.</p>
+            </article>
+            <figure class="figure-container">
+                <img src="assets/images/Mark.jpg" alt="Mark Lilly" id="personal-photo">
+                <div class="button-container">
+                    <a href=""><img src="assets/images/curriculum-vitae.png" alt=""></a>
+                </div>
+            </figure>
+       </section>
+       <section id="about-me-container">
+            <div class="title-container">
+                <h2 class="title" id="title-about-me">About me</h2>
+                <div class="line-in-title"></div>
+            </div>
+            <p id="about-me-paragraph">I'm Miguel, a System Engineer from Colombia. My enthusiasm for web development drives me to learn and grow. I'm eager to explore new technologies and contribute with my passion and habilities to deliver innovative solutions.</p>
+            <h2 id="skills-title">Skills</h2>
+            <div class="icons-container">
+                <img src="assets/images/html.png" class="skills-icons" alt="">
+                <img src="assets/images/css-3.png" class="skills-icons" alt="">
+                <img src="assets/images/js.png" class="skills-icons" alt="">
+                <img src="assets/images/react.png" class="skills-icons" alt="">
+                <img src="assets/images/git.png" class="skills-icons" alt="">
+                <img src="assets/images/github.png" class="skills-icons" alt="">
+            </div>
+       </section>
+       <section id="projects-container">
+            <div class="title-container">
+                <h2 class="title" id="projects-title">Projects</h2>
+                <div class="line-in-title"></div>
+            </div>     
+            <section class="project-container">
+                <img class="project-images" src="assets/images/numberGuesser.png" alt="">
+                <p class="descriptions-projects" id="first-project">This is the number guessing game where you choose a number and the computer selects one as well. The winner is determined by the number closest to the target.</p>
+            </section>
+            <section class="project-container">
+                <img class="project-images" src="assets/images/formAstory.png" alt="">
+                <p class="descriptions-projects" id="second-project">This is a project involving a form where you fill out some questions. Depending on what you entered, those words appear in a story.</p>
+            </section>
+
+       </section>
+        
+       <section id="contact-container">
+            <div class="title-container">
+                <h2 class="title" id="contact-title">Contact</h2>
+                <div class="line-in-title"></div>
+            </div>
+            <figure class="contact-icons-container">
+                <img src="assets/images/linkedin.png" class="contact-icons" alt="">
+                <img src="assets/images/whatsapp.png" class="contact-icons" alt="">
+                <img src="assets/images/gmail.png" class="contact-icons" alt="">
+                <img src="assets/images/github.png" class="contact-icons" alt="">
+            </figure>   
+       </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
