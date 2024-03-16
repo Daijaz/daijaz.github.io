@@ -219,6 +219,10 @@ img[src="assets/images/curriculum-vitae.png"]:hover{
     border-radius: 4%;
 }
 
+.project-images:hover { 
+    scale: 1.1;
+}    
+
 .descriptions-projects{
     font-family: "Roboto", sans-serif;
     color: #D9D3C1;
@@ -308,7 +312,7 @@ img[src="assets/images/curriculum-vitae.png"]:hover{
     }
 }
 
-@media screen and ( max-width: 430px ) {
+@media screen and ( max-width: 700px ) {
 
     .navbar-container {
         display: flex;
