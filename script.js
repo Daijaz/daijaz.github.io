@@ -39,7 +39,7 @@ function spanishText(event) {
     document.getElementById('skills-title').innerHTML = 'Habilidades';
     document.getElementById('projects-title').innerHTML = 'Proyectos';
     document.getElementById('first-project').innerHTML = 'Este es el juego de adivinar números en el que usted elige un número y el ordenador también selecciona uno. El ganador se determina por el número más cercano al objetivo.';
-    document.getElementById('second-project').innerHTML = 'Se trata de un proyecto que consiste en un formulario en el que rellenas unas preguntas. Según lo que haya introducido, esas palabras aparecen en una historia';
+    document.getElementById('second-project').innerHTML = 'Listfy es una aplicación web que permite a los usuarios crear listas de reproducción personalizadas utilizando canciones de Spotify. A través de la integración con la API de Spotify, puedes buscar canciones, agregar tus favoritas a una playlist, y guardarla directamente en tu cuenta de Spotify.';
     document.getElementById('contact-title').innerHTML = 'Contacto';
 }
 
@@ -59,7 +59,7 @@ function englishText(event) {
     document.getElementById('skills-title').innerHTML = 'Skills';
     document.getElementById('projects-title').innerHTML = 'Projects';
     document.getElementById('first-project').innerHTML = 'This is the number guessing game where you choose a number and the computer selects one as well. The winner is determined by the number closest to the target.';
-    document.getElementById('second-project').innerHTML = 'This is a project involving a form where you fill out some questions. Depending on what you entered, those words appear in a story.';
+    document.getElementById('second-project').innerHTML = 'Listfy is a web application that allows users to create custom playlists using songs from Spotify. Through integration with the Spotify API, you can search for songs, add your favorites to a playlist, and save it directly to your Spotify account.';
     document.getElementById('contact-title').innerHTML = 'Contact';
 }
 
